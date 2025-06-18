@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">
+                <img src="./imagens/logo.jpg" alt="Logo" />
+            </a>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li class="dropdown">
+                <a href="#">Serviços ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Design</a></li>
+                    <li><a href="#">SEO</a></li>
+                    <li><a href="#">Marketing</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Portfólio</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+  </nav>
+
+    <h1>Seu Carrinho</h1>
+    <div id="carrinho"></div>
+
+    <script>
+        const container = document.getElementById('carrinho');
+        const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+
+        if (carrinho.length === 0) {
+            container.innerHTML = '<p>O carrinho está vazio.</p>';
+        } else {
+            carrinho.forEach(item => {
+                const el = document.createElement('p');
+                el.textContent = `${item.nome} - R$ ${item.preco.toFixed(2)} x ${item.quantidade}`;
+                container.appendChild(el);
+            });
+        }
+    </script>
+</body>
+</html>

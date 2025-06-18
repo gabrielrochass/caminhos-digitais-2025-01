@@ -6,6 +6,7 @@
   <title>Venda de Cookies</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script src="script.js"></script>
 </head>
 <body>
   <nav class="navbar">
@@ -16,7 +17,7 @@
     </div>
 
     <ul class="nav-links">
-      <li><a href="#">Início</a></li>
+      <li><a href="index.html">Início</a></li>
       <li><a href="#">Sobre</a></li>
       <li class="dropdown">
         <a href="#">Serviços ▾</a>
@@ -26,7 +27,7 @@
           <li><a href="#">Marketing</a></li>
         </ul>
       </li>
-      <li><a href="#">Portfólio</a></li>
+      <li><a href="carrinho.html">Carrinho</a></li>
       <li><a href="#">Contato</a></li>
     </ul>
   </nav>
@@ -37,42 +38,42 @@
                 <h3>Cookie de Chocolate</h3>
                 <p>Delicioso cookie com gotas de chocolate ao leite.</p>
                 <p><strong>R$ 10,00</strong></p>
-                <button>Comprar</button>
+                <button class="comprar-btn" data-nome="Cookie de Chocolate" data-preco="10.00">Comprar</button>
             </div>
             <div class="product">
                 <img src="./imagens/cookie.jpg" alt="Cookie de Aveia e Uva Passa">
                 <h3>Cookie de Aveia e Uva Passa</h3>
                 <p>Uma opção saudável com aveia e uvas passas.</p>
                 <p><strong>R$ 12,00</strong></p>
-                <button>Comprar</button>
+                <button class="comprar-btn" data-nome="Cookie de Aveia e Uva Passa" data-preco="12.00">Comprar</button>
             </div>
             <div class="product">
                 <img src="./imagens/cookie.jpg" alt="Cookie de Manteiga de Amendoim">
                 <h3>Cookie de Manteiga de Amendoim</h3>
                 <p>Sabor intenso de manteiga de amendoim.</p>
                 <p><strong>R$ 15,00</strong></p>
-                <button>Comprar</button>
+                <button class="comprar-btn" data-nome="Cookie de Manteiga de Amendoim" data-preco="15.00">Comprar</button>
             </div>
             <div class="product">
                 <img src="./imagens/cookie.jpg" alt="Cookie de Chocolate Duplo">
                 <h3>Cookie de Chocolate Duplo</h3>
                 <p>Para os amantes de chocolate, com massa e gotas de chocolate.</p>
                 <p><strong>R$ 18,00</strong></p>
-                <button>Comprar</button>
+                <button class="comprar-btn" data-nome="Cookie de Chocolate Duplo" data-preco="18.00">Comprar</button>
             </div>
             <div class="product">
                 <img src="./imagens/cookie.jpg" alt="Cookie de Chocolate Branco e Macadâmia">
                 <h3>Cookie de Chocolate Branco e Macadâmia</h3>
                 <p>Combinação perfeita de chocolate branco e macadâmia.</p>
                 <p><strong>R$ 20,00</strong></p>
-                <button>Comprar</button>
+                <button class="comprar-btn" data-nome="Cookie de Chocolate Branco e Macadâmia" data-preco="20.00">Comprar</button>
             </div>
             <div class="product">
                 <img src="./imagens/cookie.jpg" alt="Cookie Red Velvet">
                 <h3>Cookie Red Velvet</h3>
                 <p>Cookie macio com sabor clássico de red velvet.</p>
                 <p><strong>R$ 22,00</strong></p>
-                <button>Comprar</button>
+                <button class="comprar-btn" data-nome="Cookie Red Velvet" data-preco="22.00">Comprar</button>
             </div>
         </div>
     </section>

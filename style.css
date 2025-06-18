@@ -177,17 +177,70 @@
 .logo img {
   height: 60px;
 }
+#carrinho-titulo {
+  text-align: center;
+  font-size: 2rem;
+  margin: 40px 0 24px;
+  font-weight: 700;
+  color: #333;
+}
 
-table {
-    width: 60%;
-    border-collapse: collapse;
-    margin: 20px auto;
+.carrinho-lista {
+  max-width: 600px;
+  margin: 0 auto 32px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px #0001;
+  padding: 32px 24px;
+  min-height: 120px;
 }
-th, td {
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: center;
+
+.carrinho-vazio {
+  text-align: center;
+  color: #888;
+  font-size: 1.1rem;
+  padding: 32px 0;
 }
-th {
-    background: #f4f4f4;
+
+.carrinho-item-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding: 12px 0;
+  gap: 16px;
 }
+.carrinho-item-div:last-child { border-bottom: none; }
+
+.carrinho-item {
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.btn-remover-item,
+.btn-limpar-carrinho {
+  background: #0077ff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-remover-item {
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  background: #ff5252;
+}
+.btn-remover-item:hover { background: #d32f2f; }
+
+.btn-limpar-carrinho {
+  display: block;
+  margin: 24px auto 40px;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 2px 8px #0001;
+}
+.btn-limpar-carrinho:hover { background: #005bb5; }

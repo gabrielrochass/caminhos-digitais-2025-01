@@ -87,5 +87,14 @@
             });
         }
     </script>
+
+    <script>
+        // Calcula e exibe o total da compra
+        const total = carrinho.reduce((soma, item) => soma + item.preco * item.quantidade, 0);
+        const totalDiv = document.createElement('div');
+        totalDiv.className = 'carrinho-total';
+        totalDiv.innerHTML = `<strong>Total: R$ ${total.toFixed(2)}</strong>`;
+        document.body.appendChild(totalDiv);
+    </script>
 </body>
 </html>

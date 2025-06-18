@@ -50,16 +50,6 @@
     </script>
 
     <script>
-        // Botão para limpar o carrinho
-        const limparBtn = document.createElement('button');
-        limparBtn.textContent = 'Limpar Carrinho';
-        limparBtn.className = 'btn-limpar-carrinho';
-        limparBtn.onclick = function() {
-            localStorage.removeItem('carrinho');
-            location.reload();
-        };
-        document.body.appendChild(limparBtn);
-
         // Adiciona botões de remover individualmente
         if (carrinho.length > 0) {
             // Limpa o container antes de adicionar novamente os itens com botões

@@ -247,7 +247,7 @@
 
 .carrinho-total {
   max-width: 600px;
-  margin: 0 auto 40px;
+  margin: 0 auto;
   background: #f7fbff;
   border-radius: 8px;
   box-shadow: 0 2px 8px #0077ff18;

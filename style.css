@@ -284,81 +284,61 @@
   margin: 0;
   line-height: 1.1;
 }
-.welcome {
-  max-width: 700px;
-  margin: 48px auto 40px;
-  background: transparent;
-  border-radius: 0;
-  box-shadow: none;
-  padding: 0 32px 0;
+.secao {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px 40px;
+  align-items: center;
+  gap: 40px;
 }
 
-.welcome h2 {
-  font-size: 2.1rem;
-  color: #0077ff;
-  margin-bottom: 18px;
-  font-weight: 700;
-  letter-spacing: 0.01em;
+.texto-esquerda .texto {
+  order: 1;
+}
+.texto-esquerda .imagem {
+  order: 2;
 }
 
-.welcome p {
-  font-size: 1.08rem;
-  color: #444;
-  margin-bottom: 18px;
-  line-height: 1.7;
+.texto-direita .imagem {
+  order: 1;
+}
+.texto-direita .texto {
+  order: 2;
 }
 
-.welcome ul {
-  list-style: disc inside;
-  text-align: left;
-  margin: 12px auto 0 0;
-  padding-left: 18px;
-  color: #333;
-  font-size: 1rem;
+.texto, .imagem {
+  flex: 1 1 45%;
 }
 
-.welcome strong {
-  color: #0077ff;
-  font-weight: 600;
+.texto ul {
+  padding-left: 20px;
 }
 
-.galeria-fotos {
-  max-width: 900px;
-  margin: 48px auto 32px;
-  background: #fff;
+.imagem img {
+  width: 100%;
+  height: auto;
   border-radius: 8px;
-  padding: 28px 20px 24px;
-  box-shadow: 0 2px 8px #0001;
 }
-
-.galeria-fotos h2 {
+.galeria {
+  background-color: #f3e5f5;
   text-align: center;
-  font-size: 1.7rem;
-  color: #0077ff;
-  margin-bottom: 20px;
-  font-weight: 600;
-  letter-spacing: 0.01em;
+  padding: 60px 20px;
 }
 
 .fotos-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 16px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+  margin-top: 30px;
+  justify-content: flex-start;
 }
 
 .fotos-grid img {
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-  border-radius: 6px;
-  box-shadow: 0 1px 4px #0001;
-  transition: transform 0.18s, box-shadow 0.18s;
-  cursor: pointer;
-}
-
-.fotos-grid img:hover {
-  transform: scale(1.025);
-  box-shadow: 0 4px 12px #0077ff18;
+  width: 220px;
+  height: auto;
+  border-radius: 8px;
+  flex: 0 0 auto;
 }
 
   footer {

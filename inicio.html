@@ -1,71 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Bem-vindo à Loja Online</title>
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bem-vindo à Loja Online</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar">
+  <nav class="navbar">
     <div class="lado-esquerdo">
       <div class="logo">
-        <a href="#">
-          <img src="./imagens/logo.jpg" alt="Logo" />
-        </a>
+        <a href="#"><img src="./imagens/logo.jpg" alt="Logo" /></a>
       </div>
       <div class="nome">
         <h1>Venda de Cookies</h1>
       </div>
     </div>
-
     <ul class="nav-links">
-      <li><a href="index.html">Início</a></li>
-      <li><a href="#">Sobre</a></li>
+      <li><a href="inicio.html">Início</a></li>
       <li class="dropdown">
         <a href="#">Produtos ▾</a>
         <ul class="dropdown-menu">
-          <li><a href="#">Mesa Posta</a></li>
-          <li><a href="#">Kim Store</a></li>
-          <li><a href="#">Marketing</a></li>
+          <li><a href="index.html">Mesa Posta</a></li>
+          <li><a href="index.html">Kim Store</a></li>
+          <li><a href="index.html">Marketing</a></li>
         </ul>
       </li>
       <li><a href="carrinho.html">Carrinho</a></li>
       <li><a href="#">Contato</a></li>
     </ul>
   </nav>
-    <div class="conteudo-lado-a-lado">
-        <main class="welcome">
-            <h2>Bem-vindo à Loja Online!</h2>
-            <p>
-                Este site foi desenvolvido como um projeto de aprendizado, utilizando as tecnologias HTML, CSS e JavaScript.<br>
-                A página apresenta uma navegação simples, um catálogo de produtos fictícios e um layout responsivo.<br>
-                O design foi pensado para ser limpo e intuitivo, facilitando a navegação dos usuários.<br>
-                Sinta-se à vontade para explorar e conhecer mais sobre como criar lojas virtuais com tecnologias web modernas!
-            </p>
-            <p>
-                <strong>Como foi feito:</strong>
-                <ul>
-                    <li>Estruturação com HTML5</li>
-                    <li>Estilização com CSS e Google Fonts</li>
-                    <li>Funcionalidades básicas com JavaScript</li>
-                    <li>Imagens ilustrativas e navegação simulada</li>
-                </ul>
-            </p>
-        </main>
-        <section class="galeria-fotos">
-            <h2>Galeria de Fotos</h2>
-            <div class="fotos-grid">
-                <img src="./imagens/cookie.jpg" alt="Produto 1" />
-                <img src="./imagens/cookie.jpg" alt="Produto 2" />
-                <img src="./imagens/cookie.jpg" alt="Produto 3" />
-                <img src="./imagens/cookie.jpg" alt="Produto 4" />
-            </div>
-        </section>
+
+  <!-- Seção 1: Texto à esquerda, imagem à direita -->
+  <section class="secao texto-esquerda">
+    <div class="texto">
+      <h2>Bem-vindo à Loja Online!</h2>
+      <p>Este site foi desenvolvido como um projeto de aprendizado, utilizando HTML, CSS e JavaScript. O design foi pensado para ser limpo e intuitivo.</p>
+      <ul>
+        <li>HTML5 para estruturação</li>
+        <li>CSS com Google Fonts</li>
+        <li>JavaScript para funcionalidades básicas</li>
+        <li>Layout responsivo e imagens ilustrativas</li>
+      </ul>
     </div>
-    <footer>
-        &copy; 2024 Loja Online. Todos os direitos reservados.
-    </footer>
+    <div class="imagem">
+      <img src="./imagens/grupo.webp" alt="Loja Virtual">
+    </div>
+  </section>
+
+  <!-- Seção 2: Imagem à esquerda, texto à direita -->
+  <section class="secao texto-direita">
+    <div class="imagem">
+      <img src="./imagens/grupo.webp" alt="Sobre Nós">
+    </div>
+    <div class="texto">
+      <h2>Sobre Nós</h2>
+      <p>Somos apaixonados por criar experiências únicas de compra online. Nosso foco é qualidade, inovação e atendimento de excelência.</p>
+      <p>Nossa equipe é formada por profissionais dedicados e prontos para ajudar em cada etapa da sua jornada de compra.</p>
+    </div>
+  </section>
+
+  <!-- Seção 3: Galeria com fundo de destaque -->
+  <section class="secao galeria">
+    <h2>Galeria de Fotos</h2>
+    <div class="fotos-grid">
+      <img src="./imagens/cookie.jpg" alt="Produto 1" />
+      <img src="./imagens/cookie.jpg" alt="Produto 2" />
+      <img src="./imagens/cookie.jpg" alt="Produto 3" />
+      <img src="./imagens/cookie.jpg" alt="Produto 4" />
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2024 Loja Online. Todos os direitos reservados.
+  </footer>
 </body>
 </html>

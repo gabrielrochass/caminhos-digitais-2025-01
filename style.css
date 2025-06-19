@@ -463,11 +463,21 @@ footer {
 
 .hero__title {
   font-size: 2.6rem;
-  color: #222;
+  color: #04080F;
   font-weight: 800;
   margin-bottom: 24px;
   line-height: 1.15;
   letter-spacing: -0.01em;
+}
+
+.hero__title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #ec4e20 60%, #fbfef9 100%);
+  border-radius: 2px;
+  margin-top: 10px;
 }
 
 .hero__description {

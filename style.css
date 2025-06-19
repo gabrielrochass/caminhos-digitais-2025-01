@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #f9f9f9;
+  background-color: #fbfef9;
 }
 
 /* Navbar */
@@ -123,7 +123,7 @@ body {
 
 /* Hero */
 .hero {
-  background: #f0f6fb;
+  background: #fbfef9;
   padding: 80px 0;
 }
 
@@ -172,7 +172,7 @@ body {
 
 /* Sobre */
 .sobre {
-  padding: 80px 0;
+  padding: 10px 0;
   background: #fff;
 }
 
@@ -451,7 +451,7 @@ footer {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(90deg, #f0f6fb 60%, #eaf3fa 100%);
+  background: #fbfef9;
   padding: 80px 0 60px 0;
   gap: 48px;
 }
@@ -499,9 +499,8 @@ footer {
   flex-wrap: wrap;
   align-items: center;
   gap: 48px;
-  background: #fff;
-  padding: 80px 0 60px 0;
-}
+  background: #5F7470;
+  padding: 80px 0 80px 80px;}
 
 .about__image {
   flex: 1 1 320px;
@@ -521,20 +520,30 @@ footer {
 
 .about__content {
   flex: 1 1 380px;
-  max-width: 540px;
+  max-width: 560px;
 }
-
 .about__title {
   font-size: 2.2rem;
-  color: #222;
+  color: #FBFEF9;
   font-weight: 700;
   margin-bottom: 22px;
   line-height: 1.2;
+  position: relative;
+}
+
+.about__title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #ec4e20 60%, #5F7470 100%);
+  border-radius: 2px;
+  margin-top: 10px;
 }
 
 .about__description {
   font-size: 1.08rem;
-  color: #444;
+  color: #FBFEF9;
   margin-bottom: 16px;
   line-height: 1.6;
 }

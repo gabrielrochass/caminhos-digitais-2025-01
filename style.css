@@ -721,3 +721,60 @@ footer {
     padding: 16px 0;
   }
 }
+
+.equipe-devs {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.equipe-devs h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+/* Grid para 3 por linha */
+.equipe-devs-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.dev {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.dev img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #ddd;
+}
+
+.dev .info h3 {
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.dev .info p {
+  margin: 4px 0;
+  text-align: center;
+}
+
+.dev .info a {
+  color: #0077aa;
+  text-decoration: none;
+}
+
+.dev .info a:hover {
+  text-decoration: underline;
+}
+
+

@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrinho de Compras</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrinho de Compras</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar">
+  <nav class="navbar">
     <div class="lado-esquerdo">
       <div class="logo">
         <a href="#"><img src="./imagens/logo.png" alt="Logo" /></a>
@@ -21,13 +21,13 @@
       <li class="dropdown">
         <a href="#">Lojas▾</a>
         <ul class="dropdown-menu">
-            <li><a href="index.html">Coffeeshop</a></li>
-            <li><a href="index.html">Casa dos Bolos</a></li>
-            <li><a href="index.html">Kim Store</a></li>
-            <li><a href="index.html">Sport Store</a></li>
-            <li><a href="index.html">Mundo do Futebol</a></li>
-            <li><a href="index.html">Máquinas para Barbeiro</a></li>
-            <li><a href="index.html">Tudo em Pontos</a></li>
+          <li><a href="index.html">Coffeeshop</a></li>
+          <li><a href="index.html">Casa dos Bolos</a></li>
+          <li><a href="index.html">Kim Store</a></li>
+          <li><a href="index.html">Sport Store</a></li>
+          <li><a href="index.html">Mundo do Futebol</a></li>
+          <li><a href="index.html">Máquinas para Barbeiro</a></li>
+          <li><a href="index.html">Tudo em Pontos</a></li>
         </ul>
       </li>
       <li><a href="carrinho.html">Carrinho</a></li>
@@ -35,61 +35,9 @@
     </ul>
   </nav>
 
-    <h1 id="carrinho-titulo">Seu Carrinho</h1>
-    <div id="carrinho" class="carrinho-lista"></div>
+  <h1 id="carrinho-titulo">Seu Carrinho</h1>
+  <div id="carrinho" class="carrinho-lista"></div>
 
-    <script>
-        const container = document.getElementById('carrinho');
-        const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
-
-        if (carrinho.length === 0) {
-            container.innerHTML = '<p class="carrinho-vazio">O carrinho está vazio.</p>';
-        } else {
-            carrinho.forEach(item => {
-                const el = document.createElement('p');
-                el.className = 'carrinho-item';
-                el.textContent = `${item.nome} - R$ ${item.preco.toFixed(2)} x ${item.quantidade}`;
-                container.appendChild(el);
-            });
-        }
-    </script>
-
-    <script>
-        // Adiciona botões de remover individualmente
-        if (carrinho.length > 0) {
-            // Limpa o container antes de adicionar novamente os itens com botões
-            container.innerHTML = '';
-            carrinho.forEach((item, index) => {
-                const itemDiv = document.createElement('div');
-                itemDiv.className = 'carrinho-item-div';
-
-                const el = document.createElement('span');
-                el.className = 'carrinho-item';
-                el.textContent = `${item.nome} - R$ ${item.preco.toFixed(2)} x ${item.quantidade}`;
-
-                const removerBtn = document.createElement('button');
-                removerBtn.textContent = 'Remover';
-                removerBtn.className = 'btn-remover-item';
-                removerBtn.onclick = function() {
-                    carrinho.splice(index, 1);
-                    localStorage.setItem('carrinho', JSON.stringify(carrinho));
-                    location.reload();
-                };
-
-                itemDiv.appendChild(el);
-                itemDiv.appendChild(removerBtn);
-                container.appendChild(itemDiv);
-            });
-        }
-    </script>
-
-    <script>
-        // Calcula e exibe o total da compra
-        const total = carrinho.reduce((soma, item) => soma + item.preco * item.quantidade, 0);
-        const totalDiv = document.createElement('div');
-        totalDiv.className = 'carrinho-total';
-        totalDiv.innerHTML = `<strong>Total: R$ ${total.toFixed(2)}</strong>`;
-        document.body.appendChild(totalDiv);
-    </script>
+  <script src="script.js"></script>
 </body>
 </html>

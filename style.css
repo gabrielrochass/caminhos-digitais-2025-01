@@ -31,14 +31,21 @@ body {
   height: 60px;
   width: auto;
   display: block;
+  border-radius: 50%;
 }
 
 .lado-esquerdo .nome h1 {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   color: #222;
-  font-weight: 700;
+  font-weight: 400;
   margin: 0;
   line-height: 1.1;
+  letter-spacing: -0.5px;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  background: none;
+  padding: 0 4px;
+  border-radius: 4px;
+  transition: color 0.2s;
 }
 
 .nav-links {
@@ -728,10 +735,21 @@ footer {
 }
 
 .equipe-devs h2 {
-  text-align: center;
   font-size: 2rem;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
+  margin-left: 120px;
 }
+
+.equipe-devs h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #ec4e20 60%, #f7fafd 100%);
+  border-radius: 2px;
+  margin-top: 10px;
+}
+
 
 /* Grid para 3 por linha */
 .equipe-devs-lista {
@@ -762,6 +780,7 @@ footer {
   margin-bottom: 5px;
   text-align: center;
 }
+
 
 .dev .info p {
   margin: 4px 0;

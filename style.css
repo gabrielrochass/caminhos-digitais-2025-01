@@ -595,51 +595,57 @@ footer {
   transform: scale(1.04);
   box-shadow: 0 8px 32px #0077ff22;
 }
-
 /* Participants Section */
 .participants {
-  background: #eef6ff;
-  padding: 80px 0 60px 0;
+  background: #f7fafd;
+  padding: 40px 0 0px 0;
   text-align: center;
+  border-top: 0.5px solid #c5e1db;
 }
-
 .participants__title {
-  font-size: 2rem;
-  color: #222;
-  font-weight: 700;
-  margin-bottom: 32px;
-  letter-spacing: -0.01em;
+  font-size: 1.3rem;
+  color: #5F7470;
+  font-weight: 500;
+  margin-bottom: 20px;
+  letter-spacing: 0;
 }
 
 .participants__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 28px;
+  grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+  gap: 20px;
   justify-content: center;
   align-items: center;
-  max-width: 800px;
+  max-width: 600px;
   margin: 0 auto;
 }
 
 .participants__item {
-  width: 100%;
-  max-width: 180px;
+  width: 60px;
+  height: 60px;
+  max-width: 80px;
+  max-height: 80px;
   border-radius: 50%;
   aspect-ratio: 1/1;
-  object-fit: cover;
-  box-shadow: 0 4px 16px #0077ff10;
-  transition: transform 0.22s, box-shadow 0.22s;
+  object-fit: contain;
+  background: #fff;
+  box-shadow: 0 2px 8px #0077ff10;
+  transition: transform 0.18s, box-shadow 0.18s;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .participants__item:hover {
-  transform: scale(1.06);
-  box-shadow: 0 8px 32px #0077ff22;
+  transform: scale(1.08);
+  box-shadow: 0 6px 20px #0077ff22;
 }
 
 /* Footer */
 .footer {
-  background: #222;
-  color: #ccc;
+  background: #5F7470;
+  color: #FBFEF9;
   padding: 24px 0;
   text-align: center;
   font-size: 1rem;

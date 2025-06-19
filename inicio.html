@@ -36,60 +36,67 @@
     </ul>
   </nav>
 
-  <!-- Seção 1: Texto à esquerda, imagem à direita -->
-  <section class="secao texto-esquerda">
-    <div class="texto">
-      <h2>Bem-vindo ao Shopping Caminhos Digitais!</h2>
-      <p>Estamos felizes por você estar aqui! Este espaço foi criado especialmente para mostrar o talento, a criatividade e o esforço dos nossos alunos do curso de front-end. Ao longo do curso, eles tiveram a oportunidade de desenvolver suas próprias lojas virtuais, colocando em prática conhecimentos de HTML, CSS, JavaScript e muito mais.</p>
-      <p>Explore as lojas e descubra o potencial que nossos alunos estão conquistando no universo do front-end. Quem sabe, você encontra ideias incríveis ou até mesmo inspirações para seu próprio projeto!</p>
-      
-    </div>
-    <div class="imagem">
-      <img src="./imagens/grupo.webp" alt="Loja Virtual">
-    </div>
-  </section>
+<main class="main-content">
+    <!-- Seção de Boas-vindas -->
+    <section class="hero">
+        <div class="hero__content">
+            <h2 class="hero__title">Bem-vindo ao Shopping Caminhos Digitais!</h2>
+            <p class="hero__description">
+                Estamos felizes por você estar aqui! Este espaço foi criado especialmente para mostrar o talento, a criatividade e o esforço dos nossos alunos do curso de front-end. Ao longo do curso, eles tiveram a oportunidade de desenvolver suas próprias lojas virtuais, colocando em prática conhecimentos de HTML, CSS, JavaScript e muito mais.
+            </p>
+            <p class="hero__description">
+                Explore as lojas e descubra o potencial que nossos alunos estão conquistando no universo do front-end. Quem sabe, você encontra ideias incríveis ou até mesmo inspirações para seu próprio projeto!
+            </p>
+        </div>
+        <div class="hero__image">
+            <img src="./imagens/grupo.webp" alt="Loja Virtual" />
+        </div>
+    </section>
 
-  <!-- Seção 2: Imagem à esquerda, texto à direita -->
-  <section class="secao texto-direita">
-    <div class="imagem">
-      <img src="./imagens/grupo.webp" alt="Sobre Nós">
-    </div>
-    <div class="texto">
-      <h2>Sobre Nós</h2>
-    <p>Somos um grupo de estudantes dedicados à criação de experiências de compra online inovadoras e acessíveis. Nosso objetivo é unir qualidade, criatividade e tecnologia para proporcionar uma navegação agradável e intuitiva a todos os visitantes.</p>
-    <br>
-    <p>Aplicamos na prática conhecimentos de HTML5, CSS e JavaScript para criar um site moderno, responsivo e interativo, com design aprimorado e navegação intuitiva.</p>
-    <br>
-    <p>Este site representa não apenas um exercício técnico, mas também o resultado do trabalho em equipe, da troca de ideias e do compromisso com a excelência. Esperamos que você aproveite sua visita e se inspire com o potencial dos novos talentos do front-end!</p>
+    <!-- Seção Sobre Nós -->
+    <section class="about">
+        <div class="about__image">
+            <img src="./imagens/grupo.webp" alt="Sobre Nós" />
+        </div>
+        <div class="about__content">
+            <h2 class="about__title">Sobre Nós</h2>
+            <p class="about__description">
+                Somos um grupo de estudantes dedicados à criação de experiências de compra online inovadoras e acessíveis. Nosso objetivo é unir qualidade, criatividade e tecnologia para proporcionar uma navegação agradável e intuitiva a todos os visitantes.
+            </p>
+            <p class="about__description">
+                Aplicamos na prática conhecimentos de HTML5, CSS e JavaScript para criar um site moderno, responsivo e interativo, com design aprimorado e navegação intuitiva.
+            </p>
+            <p class="about__description">
+                Este site representa não apenas um exercício técnico, mas também o resultado do trabalho em equipe, da troca de ideias e do compromisso com a excelência. Esperamos que você aproveite sua visita e se inspire com o potencial dos novos talentos do front-end!
+            </p>
+        </div>
+    </section>
 
-    </div>
-  </section>
+    <!-- Galeria de Fotos -->
+    <section class="gallery">
+        <h2 class="gallery__title">Galeria de Fotos</h2>
+        <div class="gallery__grid">
+            <img class="gallery__item" src="./imagens/cookie.jpg" alt="Produto 1" />
+            <img class="gallery__item" src="./imagens/cookie.jpg" alt="Produto 2" />
+            <img class="gallery__item" src="./imagens/cookie.jpg" alt="Produto 3" />
+            <img class="gallery__item" src="./imagens/cookie.jpg" alt="Produto 4" />
+        </div>
+    </section>
 
-  <!-- Seção 3: Galeria com fundo de destaque -->
-  <section class="secao galeria">
-    <h2>Galeria de Fotos</h2>
-    <div class="fotos-grid">
-      <img src="./imagens/cookie.jpg" alt="Produto 1" />
-      <img src="./imagens/cookie.jpg" alt="Produto 2" />
-      <img src="./imagens/cookie.jpg" alt="Produto 3" />
-      <img src="./imagens/cookie.jpg" alt="Produto 4" />
-    </div>
-  </section>
+    <!-- Participantes -->
+    <section class="participants">
+        <h2 class="participants__title">Participantes</h2>
+        <div class="participants__grid">
+            <img class="participants__item" src="./imagens/cookie.jpg" alt="Participante 1" />
+            <img class="participants__item" src="./imagens/cookie.jpg" alt="Participante 2" />
+            <img class="participants__item" src="./imagens/cookie.jpg" alt="Participante 3" />
+            <img class="participants__item" src="./imagens/cookie.jpg" alt="Participante 4" />
+        </div>
+    </section>
+</main>
 
-  <section class="participantes">
-    <h2>Participantes</h2>
-    <!-- patrocinadores, portal e lojas -->
-    <div class="fotos-grid">
-      <img src="./imagens/cookie.jpg" alt="Produto 1" />
-      <img src="./imagens/cookie.jpg" alt="Produto 2" />
-      <img src="./imagens/cookie.jpg" alt="Produto 3" />
-      <img src="./imagens/cookie.jpg" alt="Produto 4" />
-    </div>
-  </section>
-
-
-  <footer>
+<footer class="footer">
     &copy; 2024 Loja Online. Todos os direitos reservados.
-  </footer>
+</footer>
 </body>
 </html>

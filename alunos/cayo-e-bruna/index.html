@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComidaDeCasa.com</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+      function toggleMenu() {
+        const menu = document.querySelector(".navbar ul");
+        menu.classList.toggle("active");
+      }
+    </script>
+</head>
+
+<body>
+    <div class="geral"></div>
+    <div class="texto"></div>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="tituloo">COMIDA DE CASAS</div> 
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <ul>
+                <li><a href="#texto">Início</a></li>
+                <li><a href="#contato">contato</a></li>
+                <li><a href="pagina1.html">Salgados</a></li>
+                <li><a href="pagina1.html#Doces">Doces</a></li>
+                <li><a href="pagina1.html#bebidas">Bebidas</a></li>
+                <li><a href="#noticias">Notícias</a></li>
+            </ul>
+            <hr>
+        </nav>
+    </header>
+
+    <div class="Pizza">
+        <h1>Te fazer feliz é a nossa maior especialidade!</h1>
+        <img src="img/pizza3.jpg" width="500" height="550px">
+        <img src="img/pizza4.jpg" width="500px" height="550px">
+        <h1>Pratos que cabem no seu bolso!</h1>
+    </div>
+
+    <div class="logo">
+        <img src="img/logoComidaDeCasas.png" alt="logo " width="400px">
+    </div>
+
+    <div class="texto" id="texto">
+        <h1>
+            Olá, bem-vindo ao Comida De Casa!<br><br>
+            Somos o Comida de Casa, um restaurante que nasceu da paixão por sabores simples, caseiros e inesquecíveis. Aqui, cada prato é preparado com carinho, temperos naturais e aquele toque especial de comida feita no fogão da vó.<br>
+            Acreditamos que comida boa é aquela que abraça a gente por dentro, que alimenta o corpo e também o coração. Do baião de dois à feijoada, do bolo de macaxeira ao pudim...<br>
+            cada receita tem uma história e um sabor que você nunca vai esquecer.
+            ✨ Venha experimentar o verdadeiro gostinho de casa.
+            Peça agora e sinta-se na cozinha mais acolhedora do mundo — a nossa!
+        </h1>
+    </div>
+
+    <br><br>
+
+    <div class="texto2">
+        <h1> PRATOS DE DAR ÁGUA NA BOCA</h1>
+        <h1>Na primeira compra!</h1>
+        <h1>Aceitamos</h1>
+        <img src="img/pix2.png" width="100px"> 
+        <img src="img/cartao2.png" width="100px">
+    </div>
+
+    <div class="contato">
+        <hr>
+        <h1>Entre em contato</h1>
+    </div>
+
+    <footer class="rodape" id="contato">
+        <h2>📍 ComidaDeCasa@gmail.com</h2>
+        <p>@brunalaisssouza @cayonunes7</p>
+        <p>Rua das Delícias, 123 – Centro, Cidade Saborosa – SP</p>
+        <p>Atendimento: Seg a Sáb, das 10h às 22h</p>
+        <p>Telefone: (11) 9575-6925</p>
+        <img src="img/instagram.png" width="100px"> 
+        <img src="img/zapp.png" width="80px"> 
+    </footer>
+
+    <div class="Comentarios" id="noticias">
+        <h1>Notícias</h1>
+        <img src="img/noticias.png">
+        <br><br><br>
+        <a href="https://youtu.be/qTj2hYkS21g?si=SgbSxYz4PiyeuloI">
+            <button style="padding: 10px 20px; background-color: #984a33; color: rgb(237, 224, 224); border: none; border-radius: 10px; font-size: 16px; cursor: pointer;font-family: 'Times New Roman', Times, serif;">
+                SABER MAIS NOTÍCIAS
+            </button>
+        </a>
+    </div>
+</body>
+</html>

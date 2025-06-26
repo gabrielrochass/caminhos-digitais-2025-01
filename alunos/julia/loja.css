@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.produtos{
+    background-color: rgb(238, 223, 218);
+    text-align: center;
+}
+
+.produtos h3 {
+    font-size: 30px;
+}
+
+.produtos-card{
+    background-color: rgb(192, 206, 206);
+    margin-top: 20px;
+    width: 250px;
+    padding: 20px;
+    border-radius: 8%;
+    transition: transform 0.3s;
+}
+
+.produtos-card:hover {
+    transform: translateY(-10px);
+}
+
+.produtos-card button {
+    color: rgb(25, 104, 173);
+    padding: 12px 20px;
+    border: none;
+    margin-top: 10px;
+    border-radius: 8%;
+    cursor:pointer;
+    transition:
+    background-color 0.2s;
+    align-items: center;
+    
+    
+}
+.produtos-card button:hover{
+    background-color: azure;
+    color: rgb(30, 78, 15);
+}
+
+.produtos-container {
+    display: flex;
+    height: 220px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    .produtos-card {
+        font-size: 22px;
+        color: black;
+    }
+
+    .produtos-card p {
+        color: blue;
+        font-size: 16px;
+        margin-top: 5px;
+    }
+}
+
+.titulo1 {
+    font-size: 50px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    text-align: center;
+}
+
+.navbar {
+    background-color: #ffffff;
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e0e0e0;
+    position: relative;
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+    align-items: center;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 8px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: #0077ff;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown > a {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  .dropdown .arrow {
+    transition: transform 0.3s ease;
+    font-size: 0.6rem;
+  }
+  
+  .dropdown-menu {
+  list-style: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    padding: 10px 0;
+    transition: all 0.3s ease;
+    z-index: 999;
+  }
+  
+  .dropdown-menu li a {
+    padding: 12px 20px;
+    display: block;
+    color: #333;
+    white-space: nowrap;
+    transition: background-color 0.2s;
+  }
+  
+  .dropdown-menu li a:hover {
+    background-color: #f0f0f0;
+  
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+  .dropdown:hover .arrow {
+    transform: rotate(180deg);
+  }
+  
+  .menu-toggle,
+  .menu-icon {
+    display: none;
+  }
+ 

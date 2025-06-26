@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.produtos {
+    background-color: rgb(15, 7, 62);
+    text-align: center;
+}
+
+.produtos h1 {
+    font-size: 50px;
+}
+
+.produtos-card {
+    background-color: rgb(255, 251, 251);
+    margin-top: 20px;
+    width: 300px;
+    padding: 20px;
+    border-radius: 8%;
+    transition: transform 0.3s;
+}
+
+.produtos-card img{
+    border-radius: 8%;
+    width: 250px;
+    height: 150px;
+}
+
+
+
+.produtos-card:hover {
+    transform: translateY(-10px);
+}
+
+.produtos-card button {
+    background-color: rgb(36, 36, 76);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    margin-top: 10px;
+    border-radius: 8%;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.produtos-card button:hover {
+    background-color: gray;
+    color: black;
+}
+
+.produtos-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: black;
+}
+.missil2{
+    height: 250px;
+}
+.missil3{
+    height: 250px;
+}
+
+.missil4{
+    width: 200px;
+    height: 250px;
+}
+
+
+
+.produtos h1{
+    font-size: 120px;
+    color: aliceblue;
+}
+.produtos-card h3{
+    font-size: 20px;
+    color: black; 
+}
+
+.produtos-card p {
+    color: blue;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.header nav ul{
+    list-style: none;
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+    align-items: center;
+    background-color: black;
+    color: beige;
+}
+
+.header nav ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: rgb(103, 102, 102);
+}
+
+.navbar {
+    background-color: darkgray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+}
+
+.navlinks{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.navlinks li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 200;
+}
+
+.navlinks li a:hover {
+    color: white;
+}
+.dropdown a {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+}
+
+.dropdown-menu {
+    list-style: none;
+    visibility: hidden;
+    transform: translatey(10px);
+    position: absolute;
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    z-index: 999;
+    opacity: 0;
+
+}
+
+.dropdown-menu li a {
+    padding: 12px;
+    display: block;
+    color: darkgrey;
+    white-space: nowrap;
+}
+
+.dropdown-menu li a:hover{
+    background-color: black;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}

@@ -1,0 +1,284 @@
+* {
+    margin: 70;
+    padding: 70;
+    margin-left: 20%;
+    margin-right: 20%;
+     
+   
+}
+
+.produtos {
+    background-color: #FBF2ED;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    -webkit-text-fill-color: black;
+}
+
+.produtos h1 {
+    font-size: 50px;
+}
+
+.produtos-card {
+    background-color:#FBF2ED ;
+    margin-top: 70px;
+    width: 200px;
+    padding: 75px;
+    border-radius: 3%;
+    transition: transform 0.3s;
+    font-family: Arial, Helvetica, serif;
+}
+
+.produtos-card img{
+    border-radius: 8%;
+    width: 200px;
+    height: 150px;
+}
+
+
+
+.produtos-card:hover {
+    transform: translateY(-10px);
+}
+
+.produtos-card button {
+    background-color: #B7BCBF;
+    color: rgb(255, 255, 255);
+    padding: 12px 20px;
+    border: 50px;
+    margin-top: 10px;
+    border-radius: 8%;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    
+}
+
+.produtos-card button:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.produtos-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color:#E8D4C6 ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.missil2{
+    height: 250px;
+}
+.missil3{
+    height: 250px;
+}
+
+.missil4{
+    width: 200px;
+    height: 250px;
+}
+
+
+
+.produtos h1{
+    font-size: 50px;
+    color: aliceblue;
+}
+.produtos-card h3{
+    font-size: 20px;
+    color: white; 
+}
+
+.produtos-card p {
+    color: rgb(1, 1, 1);
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.header nav ul{
+    list-style: none;
+
+}
+
+header{
+    display: contents;
+    justify-content: space-between;
+    font-size: 22px;
+    align-items: baseline;
+    background-color: black;
+    color: rgb(0, 0, 0);
+}
+
+.header nav ul li a{
+    color: #28403D;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: #FFE2C3;
+}
+.logo img{
+    height: 100px;
+    border-radius: 50%;
+    width: 70px;
+}
+
+.navbar {
+    background-color:#FFE2C3 ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+}
+
+.navlinks{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.navlinks li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 200;
+}
+
+.navlinks li a:hover {
+    color: rgb(0, 0, 0)
+}
+.dropdown a {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+}
+
+.dropdown-menu {
+    list-style: none;
+    visibility: hidden;
+    transform: translatey(10px);
+    position: absolute;
+    background-color:#D4C2AD ;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    z-index: 999;
+    opacity: 0;
+
+}
+
+.dropdown-menu li a {
+    padding: 12px;
+    display: block;
+    color: rgb(255, 255, 255);
+    white-space: nowrap;
+}
+
+.dropdown-menu li a:hover{
+    background-color: #EFDFCC;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.linha-azul {
+    background-color:#FFE2C3 ;
+    color: rgb(33, 18, 108);
+}
+
+.drop2 {
+    background-color: white;
+    color: red;
+    display: flex;
+    
+}
+
+.drop2 li a {
+    margin-right: 20px;
+    padding: 45px;
+    text-decoration: none;
+}
+.quemsomos{
+    font-size: 80px;
+    font-weight: 200;
+    font-style: oblique;
+    background-color: azure;
+    color: black;
+}
+.quemsomostxt{
+    font-size: x-large;
+    font-weight: 100;
+    font-style: inherit;
+    background-color: azure;
+    height: 50px;
+}
+.suporte{
+    font-size: 100px;
+    font-family: serif;
+    background-color: white;
+}
+.linhasepara{
+    background-color: rgb(33, 18, 108); 
+    color: rgb(0, 0, 0); 
+    font-size: 2px;
+}
+
+.veiculos img{
+    border-radius: 8%;
+    width: 250px;
+    height: 150px;
+}
+
+.veiculos:hover {
+    transform: translateY(-10px);
+}
+
+.veiculos button {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 12px 20px;
+    border: 50px;
+    margin-top: 10px;
+    border-radius: 8%;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.veiculos button:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.veiculos-container {
+    background-color: rgb(255, 251, 251);
+    margin-top: 50px;
+    width: 250px;
+    padding: 30px;
+    border-radius: 5%;
+    transition: transform 0.3s;
+    font-family: Arial, Helvetica, serif;
+}
+.logo img{
+    width: 90px;
+}
+.minhalogo img{
+    width: 30px;
+    border-radius: 1%;
+    size: 50px;
+}
+.minhalogo{
+    border-radius: 50%;
+    width: 20%;
+    margin: 50%;
+    padding: 50%;
+}
+

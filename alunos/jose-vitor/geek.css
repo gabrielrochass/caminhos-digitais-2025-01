@@ -4,7 +4,7 @@ body {
   }
   
   .navbar {
-    background-color: #59492A;
+    background-color: #ac7507;
     padding: 12px 24px;
     display: flex;
     align-items: center;
@@ -12,7 +12,7 @@ body {
     border-bottom: 1px solid #e0e0e0;
     position: relative;
     border-radius: 50px;
-     border: 1px solid #59492A;
+     border: 1px solid #4523a1;
   }
   .h1 {
     font-family:Arial, Helvetica, sans-serif;
@@ -66,7 +66,7 @@ body {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #59492A;
+    background-color: #87b82d;
     border-radius: 6px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
     display: flex;
@@ -106,13 +106,13 @@ body {
   }
   
 .product-catalog {
-    background-color: #D9C896;
+    background-color: #bb1515;
 }
 
 .product-catalog h2 {
     text-align: center;
     font-size: 2rem;
-    color: #333;
+    color: #d0ff00;
     margin-bottom: 20px;
 }
 
@@ -139,13 +139,13 @@ body {
 
 .product h3 {
     font-size: 1.25rem;
-    color: #333;
+    color: #b31515;
     margin-bottom: 10px;
 }
 
 .product p {
     font-size: 0.9rem;
-    color: #666;
+    color: #ff0000;
     margin-bottom: 10px;
 }
 
@@ -175,15 +175,15 @@ body {
 }
 
 .product-catalog .titulo {
-  color: #593E25;
+  color: #d0ff00;
   font-family:'Times New Roman', Times, serif
 }
 .home-body {
-  background-color:#D9C896;
+  background-color:#392fc2;
 }
 
 .home-body-home {
-  background-image: url(Bem-vindo-ao.jpg);
+  background-image: url(/Bem\ vindo\ ao.jpg);
   background-size: 100%
 }
 

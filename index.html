@@ -3,10 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Lojas | Shopping Caminhos Digitais</title>
+  <title> Início | Shopping Caminhos Digitais</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <script src="script.js"></script>
   <link rel="icon" href="imagens/logo.png">
 </head>
 <body>
@@ -35,58 +34,84 @@
             <li><a href="./alunos/erisson/indexE.R.html" target="_blank">Máquinas para Barbeiro</a></li>
             <li><a href="./alunos/paulo-e-pedro/index.html" target="_blank">Cospace</a></li>
             <li><a href="./alunos/paula/lojinha-de-paula.html" target="_blank">Tudo em Pontos</a></li>
-      </ul>
+        </ul>
       </li>
-      <li><a href="carrinho.html">Carrinho</a></li>
+      <!-- <li><a href="carrinho.html">Carrinho</a></li> -->
       <li><a href="contato.html">Contato</a></li>
     </ul>
   </nav>
-    <section class="product-catalog">
-        <div class="products">
-            <div class="product">
-                <img src="./imagens/cookie.jpg" alt="Cookie de Chocolate">
-                <h3>Cookie de Chocolate</h3>
-                <p>Delicioso cookie com gotas de chocolate ao leite.</p>
-                <p><strong>R$ 10,00</strong></p>
-                <button class="comprar-btn" data-nome="Cookie de Chocolate" data-preco="10.00">Comprar</button>
-            </div>
-            <div class="product">
-                <img src="./imagens/cookie.jpg" alt="Cookie de Aveia e Uva Passa">
-                <h3>Cookie de Aveia e Uva Passa</h3>
-                <p>Uma opção saudável com aveia e uvas passas.</p>
-                <p><strong>R$ 12,00</strong></p>
-                <button class="comprar-btn" data-nome="Cookie de Aveia e Uva Passa" data-preco="12.00">Comprar</button>
-            </div>
-            <div class="product">
-                <img src="./imagens/cookie.jpg" alt="Cookie de Manteiga de Amendoim">
-                <h3>Cookie de Manteiga de Amendoim</h3>
-                <p>Sabor intenso de manteiga de amendoim.</p>
-                <p><strong>R$ 15,00</strong></p>
-                <button class="comprar-btn" data-nome="Cookie de Manteiga de Amendoim" data-preco="15.00">Comprar</button>
-            </div>
-            <div class="product">
-                <img src="./imagens/cookie.jpg" alt="Cookie de Chocolate Duplo">
-                <h3>Cookie de Chocolate Duplo</h3>
-                <p>Para os amantes de chocolate, com massa e gotas de chocolate.</p>
-                <p><strong>R$ 18,00</strong></p>
-                <button class="comprar-btn" data-nome="Cookie de Chocolate Duplo" data-preco="18.00">Comprar</button>
-            </div>
-            <div class="product">
-                <img src="./imagens/cookie.jpg" alt="Cookie de Chocolate Branco e Macadâmia">
-                <h3>Cookie de Chocolate Branco e Macadâmia</h3>
-                <p>Combinação perfeita de chocolate branco e macadâmia.</p>
-                <p><strong>R$ 20,00</strong></p>
-                <button class="comprar-btn" data-nome="Cookie de Chocolate Branco e Macadâmia" data-preco="20.00">Comprar</button>
-            </div>
-            <div class="product">
-                <img src="./imagens/cookie.jpg" alt="Cookie Red Velvet">
-                <h3>Cookie Red Velvet</h3>
-                <p>Cookie macio com sabor clássico de red velvet.</p>
-                <p><strong>R$ 22,00</strong></p>
-                <button class="comprar-btn" data-nome="Cookie Red Velvet" data-preco="22.00">Comprar</button>
-            </div>
+
+<main class="main-content">
+    <!-- Seção de Boas-vindas -->
+    <section class="hero">
+        <div class="hero__content">
+            <h2 class="hero__title">Bem-vindo ao Shopping Caminhos Digitais!</h2>
+            <p class="hero__description">
+                Estamos felizes por você estar aqui! Este espaço foi criado especialmente para mostrar o talento, a criatividade e o esforço dos nossos alunos do curso de front-end. Ao longo do curso, eles tiveram a oportunidade de desenvolver suas próprias lojas virtuais, colocando em prática conhecimentos de HTML, CSS, JavaScript e muito mais.
+            </p>
+            <p class="hero__description">
+                Explore as lojas e descubra o potencial que nossos alunos estão conquistando no universo do front-end. Quem sabe, você encontra ideias incríveis ou até mesmo inspirações para seu próprio projeto!
+            </p>
+        </div>
+        <div class="hero__image">
+            <img src="./imagens/1.jpeg" alt="Loja Virtual" />
         </div>
     </section>
 
+    <!-- Seção Sobre Nós -->
+    <section class="about">
+        <div class="about__image">
+            <img src="./imagens/2.jpeg" alt="Sobre Nós" />
+        </div>
+        <div class="about__content">
+            <h2 class="about__title">Sobre Nós</h2>
+            <p class="about__description">
+                Somos um grupo de estudantes dedicados à criação de experiências de compra online inovadoras e acessíveis. Nosso objetivo é unir qualidade, criatividade e tecnologia para proporcionar uma navegação agradável e intuitiva a todos os visitantes.
+            </p>
+            <p class="about__description">
+                Aplicamos na prática conhecimentos de HTML5, CSS e JavaScript para criar um site moderno, responsivo e interativo, com design aprimorado e navegação intuitiva.
+            </p>
+            <p class="about__description">
+                Este site representa não apenas um exercício técnico, mas também o resultado do trabalho em equipe, da troca de ideias e do compromisso com a excelência. Esperamos que você aproveite sua visita e se inspire com o potencial dos novos talentos do front-end!
+            </p>
+        </div>
+    </section>
+
+    <!-- Galeria de Fotos -->
+    <section class="gallery">
+        <h2 class="gallery__title">Galeria de Fotos</h2>
+        <div class="gallery__grid">
+            <img class="gallery__item" src="./imagens/3.jpeg" alt="Produto 1" />
+            <img class="gallery__item" src="./imagens/4.jpeg" alt="Produto 2" />
+            <img class="gallery__item" src="./imagens/5.jpeg" alt="Produto 3" />
+            <img class="gallery__item" src="./imagens/6.jpeg" alt="Produto 4" />
+        </div>
+    </section>
+
+    <!-- Participantes -->
+    <section class="participants">
+        <h2 class="participants__title">Participantes</h2>
+        <div class="participants__grid">
+            <img class="participants__item" src="./imagens/portal.jpeg" alt="Participante 1" />
+            <img class="participants__item" src="./imagens/avanade.jpg" alt="Participante 2" />
+            <img class="participants__item" src="./imagens/visao-mundial.png" alt="Participante 3" />
+            <img class="participants__item" src="./imagens/caminhos-digitais.jpg" alt="Participante 4" />
+            <img class="participants__item" src="./imagens/pontos.jpg" alt="Participante 4" />
+            <img class="participants__item" src="./imagens/casa-dos-doces.png" alt="Participante 4" />
+            <img class="participants__item" src="./imagens/coffeshop.png" alt="Participante 4" />
+            <img class="participants__item" src="./imagens/geek-shop.jpeg" alt="Participante 4" />
+            <img class="participants__item" src="./imagens/sport.png" alt="Participante 4" />
+            <img class="participants__item" src="./imagens/sound.png" alt="Participante 4" />
+            <img class="participants__item" src="./imagens/bookstore.png" alt="Participante 4" />
+            <img class="participants__item" src="./imagens/casa.png" alt="Participante 4" />
+            <img class="participants__item" src="./alunos/paulo-e-pedro/1.jpeg" alt="Participante 4" />
+            <img class="participants__item" src="./alunos/erisson/ChatGPT Image 19 de jun. de 2025, 20_38_35.png" alt="Participante 4" />
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    &copy; 2025 Shopping Caminhos Digitais. Todos os direitos reservados.
+</footer>
 </body>
 </html>

@@ -1,0 +1,164 @@
+
+body{
+    background-color: #7a1616;
+}
+
+.titulo1{
+    text-align: center;
+    margin-bottom: 14px;
+    color: white;
+    font-size: 52px;
+    font-weight: bold;
+     box-shadow: 2px 10px 12px rgba(223, 202, 14, 0.607);
+    
+    
+}
+
+
+
+
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    
+    
+   
+}
+.produtos :hover{
+    transform: scale(1.10);
+    
+}
+
+.produtos-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(235, 73, 73, 0.1);
+     box-shadow: 2px 10px 12px rgba(223, 202, 14, 0.607);
+      
+    
+    
+}
+
+.produtos-card img {
+    border-radius: 10px;
+    
+  
+}
+
+.produtos-card h2 {
+    font-size: 22px;
+    margin: 10px 0;
+      
+}
+
+.produtos-card button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 9px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.produtos-card button:hover {
+    background-color: #c61919;
+      transition: transform 0.10s ease;
+    cursor: pointer;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+    color: #f4e1e1;
+   
+   
+   
+  
+}
+
+
+.cards-doces {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+     
+    
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(167, 24, 24, 0.2);
+    width: 260px;
+    padding: 15px;
+      box-shadow: 2px 10px 12px rgba(223, 202, 14, 0.607);
+    
+}
+
+.card:hover {
+    transform: scale(1.10);
+    box-shadow: 1 8px 16px rgba(198, 35, 35, 0.3);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card h2 {
+    font-size: 20px;
+    color: #940808; /* Tom de vermelho mais claro pro título */
+    margin: 10px 0 8px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.card button {
+    background-color: #348d0e; /* Botão vermelho */
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card button:hover {
+    background-color: #d53523; /* Tom mais escuro no hover */
+}
+
+
+
+.btn-voltar { /* botão voltar*/
+  background-color: #4b8f17;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  
+}
+
+.btn-voltar:hover {
+  background-color: #f00808c3;
+}

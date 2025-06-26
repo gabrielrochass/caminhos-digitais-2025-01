@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.produtos {
+    background-color: rgb(92, 87, 87);
+    text-align: center;
+}
+
+.produtos h1 {
+    font-size: 70px;
+    color: blue;
+    margin-top: 5px;
+}
+
+.produtos-card {
+    background-color: white;
+    margin-top: 20px;
+    width: 230px;
+    padding: 70px;
+    border-radius: 10%;
+    transition: transform 0.3s;
+}
+.produtos-card img {
+    border-radius: 7%;
+}
+
+.produtos-card:hover {
+    transform: translateY(-10px);
+}
+
+.produtos-card button {
+    background-color: blue;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    margin-top: 10px;
+    border-radius: 8%;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.produtos-card button:hover {
+    background-color: greenyellow;
+    color: black;
+}
+
+.produtos-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}   
+
+.produtos-card h3 {
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+
+}
+
+.produtos-card p {
+    color: rgb(17, 91, 91);
+    font-size: 16px;
+    margin-top:  5px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    color: white;
+
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    margin-left: 40px;
+    padding: 50px;
+}

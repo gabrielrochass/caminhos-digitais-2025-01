@@ -1,0 +1,186 @@
+/* Resetando as margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estilo para o Cabeçalho */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #333;
+    color: white;
+  }
+  
+  header .logo h1 {
+    font-size: 28px;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  header nav ul li {
+    margin-left: 20px;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  header nav ul li a:hover {
+    color: #ff5722; /* Cor de hover personalizada */
+  }
+  
+  /* Estilo para a Seção de Produtos */
+  .produtos {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  .produtos h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .product-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  /* Cartões de produtos */
+  .product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 250px;
+    max-width: 100%;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 15px;
+  }
+  
+  .product-card h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .product-card p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .product-card button {
+    padding: 12px 20px;
+    background-color: rgb(142, 142, 211);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .product-card button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+  }
+  
+  .product-card button:active {
+    transform: scale(0.98);
+  }
+  
+  /* Estilo para o Rodapé */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 40px;
+  }
+  
+  footer p {
+    font-size: 14px;
+    color: #bbb;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    header {
+      padding: 20px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    header nav ul {
+      margin-top: 15px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    header nav ul li {
+      margin: 10px 0;
+    }
+  
+    .product-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .product-card {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .produtos h2 {
+      font-size: 1.5em;
+    }
+  
+    .product-card {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    header .logo h1 {
+      font-size: 24px;
+    }
+  
+    footer p {
+      font-size: 12px;
+    }
+  }
+  

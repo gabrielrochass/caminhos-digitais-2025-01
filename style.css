@@ -12,7 +12,7 @@ body {
 /* Navbar */
 .navbar {
   background-color: #fff;
-  padding: 12px 24px;
+  padding: 12px 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -900,6 +900,10 @@ footer {
     visibility: visible !important;
     transform: none !important;
     display: none;
+    margin-right: 50px; /* Afasta o dropdown da borda direita */
+  }
+  .dropdown.open .dropdown-menu {
+    display: flex;
   }
   .dropdown.open .dropdown-menu {
     display: flex;
